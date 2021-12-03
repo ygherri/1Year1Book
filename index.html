@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="test.js"></script>
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>1year1book</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home </a>
+        </li>
+        <li>
+          <a href="#blog" target="_blank">Blog</a>
+        </li>
+        <li>
+          <a href="#produits">Produits</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="produit">
+      <h2>Découvrez nos offres</h2>
+      <div class="cards">
+        <div class="card-1">
+          <h3>Le magazine</h3>
+          <p>Couverture souple</p>
+          <div class="image">
+            <img src="images/magazine.png" alt="magazine" />
+          </div>
+          <button
+            type="button"
+            onclick="afficherModal('magazine')"
+            class="myBtn"
+          >
+            Sélectionner
+          </button>
+        </div>
+        <div class="card-1">
+          <h3>Le livre</h3>
+          <p>Couverture rigide</p>
+          <div class="image">
+            <img src="images/livre.png" alt="livre" />
+          </div>
+          <button onclick="afficherModal('livre')" type="button" class="myBtn">
+            Sélectionner
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--My Modal-->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 class="title"></h3>
+        <p class="price"></p>
+        <input
+          type="number"
+          value="1"
+          class="qty"
+          min="1"
+          onchange="calculeTotal()"
+        />
+        <input type="hidden" class="unite-price" />
+
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+    </div>
+  </body>
+</html>
