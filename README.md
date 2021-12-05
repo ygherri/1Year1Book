@@ -23,5 +23,5 @@ J'ai utilisé :`HTML` et `Javascript`.
 - Ajout d'un input de type `number` avec un minimum 1 pour choisir la quantité.
 - Ajout d'un autre input de type `hidden` pour stocker le prix unitaire du produit (15 pour magazine ou 25 pour livre)
 - Ajout d'une fonction javascript `afficherModal()` pour afficher le prix du produit (magazine ou livre) dés qu'on clique sur le modal.
-- Ajout d'une autre fonction `calculeTotal()` qui sert à faire le calcul du prix total selon le produit et la quatitié selectionnée.
+- Ajout d'une autre fonction `calculeTotal()` qui sert à faire le calcul du prix total selon le produit et la quantité sélectionnée.
 - Ajout d'une fonction `closeModal()` pour fermer le modal.
